@@ -31,13 +31,13 @@
 ##### This Structure was build to handle a significant expansion in the future
 ##### Enterprise wide and specific business were handled
 
-![alt text](ProjectStructure.png "Scheme")
+![alt text](Documentation/ProjectStructure.png "Scheme")
 
 
 
 ###  Project Mock
 
-![alt text](JopProviderMock.png "Scheme")
+![alt text](Documentation/JopProviderMock.png "Scheme")
 
 
 ###  Adding a New Provider
