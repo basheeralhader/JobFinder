@@ -41,5 +41,4 @@ class JobTableViewCell: UITableViewCell, NibLoadableView {
             companyImageView.image = defaultCompanyLogo
         }
     }
-    
 }

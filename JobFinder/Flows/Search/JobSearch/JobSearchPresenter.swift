@@ -9,7 +9,6 @@
 import UIKit
 
 protocol JobSearchRepresentation: ViewDisplayable {
-    
     func updateList()
 }
 
@@ -21,13 +20,14 @@ final class JobSearchPresenter {
     private(set) var searchList = [String]()
     private(set) var isSearchActive = false
     private(set) var isPositionSearchActive = false
-
+    private(set) var jobsProviders = JobsProviders.allCases.first
+    private(set) var position: String?
+    private(set) var location: String?
+    
     private weak var view: JobSearchRepresentation!
     private var useCase: ProvidersUseCase!
 
-    private var jobsProviders = JobsProviders.allCases.first
-    private var position: String?
-    private var location: String?
+
 
     // MARK: - Init / Deinit
     
@@ -37,6 +37,8 @@ final class JobSearchPresenter {
         self.useCase = useCase
     }
     
+    // MARK: - Table view methods
+
     func getNumberOfRowsInSection() -> Int {
         
         if isSearchActive, !searchList.isEmpty {
@@ -45,23 +47,6 @@ final class JobSearchPresenter {
             isSearchActive = false
             return jobsList.count
         }
-    }
-    
-    func searchPosition(by text: String) {
-        isSearchActive = true
-        isPositionSearchActive = true
-        searchList = getAllPostions().filter({ $0.range(of: text, options: .caseInsensitive) != nil })
-    }
-    
-    func searchlocation(by text: String) {
-        isSearchActive = true
-        isPositionSearchActive = false
-        searchList = getAllLocations().filter({ $0.range(of: text, options: .caseInsensitive) != nil })
-    }
-    
-    func searchClear() {
-        isSearchActive = false
-        searchList.removeAll()
     }
     
     // MARK: - Fetching Data
@@ -91,6 +76,8 @@ final class JobSearchPresenter {
         }
     }
     
+    // MARK: - Update filter fields
+
     func updateProvider(_ providers: JobsProviders) {
         jobsProviders = providers
     }
@@ -100,7 +87,26 @@ final class JobSearchPresenter {
         self.location = location?.replacingOccurrences(of: " ", with: "+")
     }
     
-    func getAllLocations() -> [String] {
+    // MARK: - Search postions and locations
+
+    func searchPosition(by text: String) {
+        isSearchActive = true
+        isPositionSearchActive = true
+        searchList = getAllPostions().filter({ $0.range(of: text, options: .caseInsensitive) != nil })
+    }
+    
+    func searchlocation(by text: String) {
+        isSearchActive = true
+        isPositionSearchActive = false
+        searchList = getAllLocations().filter({ $0.range(of: text, options: .caseInsensitive) != nil })
+    }
+    
+    func searchClear() {
+        isSearchActive = false
+        searchList.removeAll()
+    }
+    
+    private func getAllLocations() -> [String] {
         
         if let path = Bundle.main.path(forResource: "Locations", ofType: ".plist"),
             let locationsList = NSArray(contentsOfFile: path) as? [String] {
@@ -109,7 +115,7 @@ final class JobSearchPresenter {
         return []
     }
     
-    func getAllPostions() -> [String] {
+    private func getAllPostions() -> [String] {
         
         if let path = Bundle.main.path(forResource: "Positions", ofType: ".plist"),
             let locationsList = NSArray(contentsOfFile: path) as? [String] {

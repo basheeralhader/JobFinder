@@ -30,6 +30,8 @@
 		10080A38226AFF5C0047E949 /* KeyboardAccessoryInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10080A36226AFF5C0047E949 /* KeyboardAccessoryInputView.xib */; };
 		1081E793226B369E00E20018 /* Locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1081E792226B369E00E20018 /* Locations.plist */; };
 		1081E795226B370400E20018 /* Positions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1081E794226B370400E20018 /* Positions.plist */; };
+		1081E79A226BA09400E20018 /* JobSearchPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081E799226BA09400E20018 /* JobSearchPresenterTests.swift */; };
+		1081E79C226BA2A800E20018 /* JobSearchMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081E79B226BA2A800E20018 /* JobSearchMock.swift */; };
 		7A0840590C54D3692F42C416 /* Pods_JobFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5345D331A1A240784152D5C /* Pods_JobFinder.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		10080A36226AFF5C0047E949 /* KeyboardAccessoryInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardAccessoryInputView.xib; sourceTree = "<group>"; };
 		1081E792226B369E00E20018 /* Locations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Locations.plist; sourceTree = "<group>"; };
 		1081E794226B370400E20018 /* Positions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Positions.plist; sourceTree = "<group>"; };
+		1081E799226BA09400E20018 /* JobSearchPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchPresenterTests.swift; sourceTree = "<group>"; };
+		1081E79B226BA2A800E20018 /* JobSearchMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchMock.swift; sourceTree = "<group>"; };
 		4F2F989F7741EB77B09C835C /* Pods-JobFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobFinder.debug.xcconfig"; path = "Target Support Files/Pods-JobFinder/Pods-JobFinder.debug.xcconfig"; sourceTree = "<group>"; };
 		B5345D331A1A240784152D5C /* Pods_JobFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F303C01BA6BCFB3A1CE7F934 /* Pods-JobFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobFinder.release.xcconfig"; path = "Target Support Files/Pods-JobFinder/Pods-JobFinder.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 		100809EF22690BD90047E949 /* JobFinderTests */ = {
 			isa = PBXGroup;
 			children = (
+				1081E796226BA04400E20018 /* Flows */,
 				100809F022690BD90047E949 /* JobFinderTests.swift */,
 				100809F222690BD90047E949 /* Info.plist */,
 			);
@@ -290,6 +295,31 @@
 				10080A36226AFF5C0047E949 /* KeyboardAccessoryInputView.xib */,
 			);
 			path = "Keyboard Accessory Input View";
+			sourceTree = "<group>";
+		};
+		1081E796226BA04400E20018 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				1081E797226BA04D00E20018 /* Search */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		1081E797226BA04D00E20018 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				1081E798226BA05300E20018 /* JobSearch */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		1081E798226BA05300E20018 /* JobSearch */ = {
+			isa = PBXGroup;
+			children = (
+				1081E79B226BA2A800E20018 /* JobSearchMock.swift */,
+				1081E799226BA09400E20018 /* JobSearchPresenterTests.swift */,
+			);
+			path = JobSearch;
 			sourceTree = "<group>";
 		};
 		593D6C9629A06DF8CD9F1557 /* Pods */ = {
@@ -518,6 +548,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1081E79A226BA09400E20018 /* JobSearchPresenterTests.swift in Sources */,
+				1081E79C226BA2A800E20018 /* JobSearchMock.swift in Sources */,
 				100809F122690BD90047E949 /* JobFinderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
