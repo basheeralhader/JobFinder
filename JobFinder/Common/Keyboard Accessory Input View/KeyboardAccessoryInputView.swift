@@ -15,7 +15,6 @@ final class KeyboardAccessoryInputView: UIView, NibLoadable {
     // MARK: Properties
     
     var onClickOnDoneButton: (()->())?
-
     
     // MARK: Actions
 

@@ -11,6 +11,8 @@ import AlamofireImage
 
 class JobTableViewCell: UITableViewCell, NibLoadableView {
 
+    // MARK: - BOutlets
+
     @IBOutlet private weak var companyImageView: UIImageView!
     @IBOutlet private weak var jobTitleLabel: UILabel!
     @IBOutlet private weak var companyNameLabel: UILabel!

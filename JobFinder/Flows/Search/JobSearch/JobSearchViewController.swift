@@ -35,6 +35,8 @@ final class JobSearchViewController: UIViewController, StoryboardInitiable {
         presenter.getAvailableJobs()
     }
     
+    // MARK: Private
+
     private func configurePickerView() {
 
         providerTextField.text = JobsProviders.allCases.first?.rawValue
@@ -54,6 +56,8 @@ final class JobSearchViewController: UIViewController, StoryboardInitiable {
         providerTextField.inputAccessoryView = keyboardAccessoryInputView
     }
     
+    // MARK: Actions
+
     @IBAction private func filterButtonTapped(_ sender: Any) {
         
         presenter.searchClear()
@@ -129,7 +133,6 @@ extension JobSearchViewController: JobSearchRepresentation {
 
 extension JobSearchViewController: UIPickerViewDelegate, UIPickerViewDataSource  {
     
-    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -143,10 +146,8 @@ extension JobSearchViewController: UIPickerViewDelegate, UIPickerViewDataSource 
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
         providerTextField.text = JobsProviders.allCases[row].rawValue
         selectedJobsProvider = JobsProviders.allCases[row]
     }
-    
 }
 
