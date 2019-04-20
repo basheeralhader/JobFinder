@@ -80,6 +80,8 @@ final class JobSearchPresenter {
 
     func updateProvider(_ providers: JobsProviders) {
         jobsProviders = providers
+        jobsList.removeAll()
+        view.updateList()
     }
     
     func updateFilterValues(_ position: String?, location: String?) {
