@@ -10,17 +10,10 @@ import UIKit
 
 extension ViewControllersAssembly {
 
-    static func makeTopAppViewController() -> TopAppsTableViewController {
-        let viewController: TopAppsTableViewController = topApps.makeViewController()
-        let viewModel = TopAppsViewModel(with: viewController)
-        viewController.viewModel = viewModel
-        return viewController
-    }
-    
-    static func makeDetailsTopAppTableViewController(for topApp: TopApp) -> DetailsTopAppViewController {
-        let viewController: DetailsTopAppViewController = topApps.makeViewController()
-        let viewModel = DetailsTopAppViewModel(with: topApp)
-        viewController.viewModel = viewModel
+    static func makeJobSearchViewController() -> JobSearchViewController {
+        let viewController: JobSearchViewController = jobSearch.makeViewController()
+        let presenter = JobSearchPresenter(with: viewController, useCase: ProvidersUseCase())
+        viewController.presenter = presenter
         return viewController
     }
     

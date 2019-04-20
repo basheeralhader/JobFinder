@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KeyboardAccessoryInputView" customModule="MobileNOC" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KeyboardAccessoryInputView" customModule="JobFinder" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -30,16 +29,6 @@
                         <action selector="doneButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="tOi-3W-HkS"/>
                     </connections>
                 </button>
-                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kE-r7-SBz">
-                    <rect key="frame" x="16" y="7" width="54" height="30"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="Manual">
-                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                    <connections>
-                        <action selector="leftBarButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="RW7-wM-iyb"/>
-                    </connections>
-                </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fav-VS-Ynd">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -54,16 +43,11 @@
                 <constraint firstItem="fav-VS-Ynd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="CqB-Nk-HRu"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Zxx-Qd-lCa" secondAttribute="trailing" constant="20" id="Duj-Nz-N3Y"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Zxx-Qd-lCa" secondAttribute="bottom" constant="7" id="FDf-6V-MnE"/>
-                <constraint firstItem="5kE-r7-SBz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="PZY-Q5-vV1"/>
                 <constraint firstItem="Zxx-Qd-lCa" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="7" id="QRv-02-Exp"/>
                 <constraint firstItem="fav-VS-Ynd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pr1-qB-Ido"/>
-                <constraint firstItem="5kE-r7-SBz" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="z4o-yi-Po9"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <connections>
-                <outlet property="leftBarButton" destination="5kE-r7-SBz" id="kV1-WU-asF"/>
-            </connections>
             <point key="canvasLocation" x="-153" y="-449"/>
         </view>
     </objects>

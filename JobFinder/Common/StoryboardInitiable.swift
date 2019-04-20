@@ -1,8 +1,8 @@
 //
 //  StoryboardInitiable.swift
-//  iTunesApps-MVVM
+//  JobFinder
 //
-//  Created by Basheer Alhader on 2/9/19.
+//  Created by OSX on 4/18/19.
 //  Copyright © 2019 iBasheer. All rights reserved.
 //
 
@@ -20,4 +20,3 @@ extension StoryboardInitiable where Self: UIViewController {
         return String(describing: self)
     }
 }
-

@@ -8,12 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		100809DC22690BD70047E949 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100809DB22690BD70047E949 /* AppDelegate.swift */; };
-		100809DE22690BD70047E949 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100809DD22690BD70047E949 /* ViewController.swift */; };
-		100809E122690BD70047E949 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 100809DF22690BD70047E949 /* Main.storyboard */; };
+		100809DE22690BD70047E949 /* JobSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100809DD22690BD70047E949 /* JobSearchViewController.swift */; };
+		100809E122690BD70047E949 /* JobSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 100809DF22690BD70047E949 /* JobSearch.storyboard */; };
 		100809E322690BD80047E949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 100809E222690BD80047E949 /* Assets.xcassets */; };
 		100809E622690BD80047E949 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 100809E422690BD80047E949 /* LaunchScreen.storyboard */; };
 		100809F122690BD90047E949 /* JobFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100809F022690BD90047E949 /* JobFinderTests.swift */; };
 		100809FC22690BD90047E949 /* JobFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100809FB22690BD90047E949 /* JobFinderUITests.swift */; };
+		10080A13226916100047E949 /* JobSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10080A12226916100047E949 /* JobSearchPresenter.swift */; };
+		10080A162269164E0047E949 /* ViewControllersAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10080A152269164E0047E949 /* ViewControllersAssembly.swift */; };
+		10080A18226916C60047E949 /* StoryboardInitiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10080A17226916C60047E949 /* StoryboardInitiable.swift */; };
+		10080A1A2269179E0047E949 /* ViewControllersAssembly+JobSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10080A192269179E0047E949 /* ViewControllersAssembly+JobSearch.swift */; };
+		10080A1D22691A3D0047E949 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10080A1C22691A3D0047E949 /* Extensions.swift */; };
+		10080A212269DD7F0047E949 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10080A202269DD7F0047E949 /* Job.swift */; };
+		10080A272269E0820047E949 /* GithubProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10080A262269E0820047E949 /* GithubProvider.swift */; };
+		10080A292269E0B80047E949 /* SearchGOVProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10080A282269E0B80047E949 /* SearchGOVProvider.swift */; };
+		10080A2B2269E25C0047E949 /* ProvidersUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10080A2A2269E25C0047E949 /* ProvidersUseCase.swift */; };
+		10080A2E226A57D20047E949 /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10080A2C226A57D20047E949 /* JobTableViewCell.swift */; };
+		10080A2F226A57D20047E949 /* JobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10080A2D226A57D20047E949 /* JobTableViewCell.xib */; };
+		10080A31226A69060047E949 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10080A30226A69060047E949 /* Protocols.swift */; };
+		10080A37226AFF5C0047E949 /* KeyboardAccessoryInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10080A35226AFF5C0047E949 /* KeyboardAccessoryInputView.swift */; };
+		10080A38226AFF5C0047E949 /* KeyboardAccessoryInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10080A36226AFF5C0047E949 /* KeyboardAccessoryInputView.xib */; };
+		1081E793226B369E00E20018 /* Locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1081E792226B369E00E20018 /* Locations.plist */; };
+		1081E795226B370400E20018 /* Positions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1081E794226B370400E20018 /* Positions.plist */; };
+		7A0840590C54D3692F42C416 /* Pods_JobFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5345D331A1A240784152D5C /* Pods_JobFinder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +53,8 @@
 /* Begin PBXFileReference section */
 		100809D822690BD70047E949 /* JobFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		100809DB22690BD70047E949 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		100809DD22690BD70047E949 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		100809E022690BD70047E949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		100809DD22690BD70047E949 /* JobSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchViewController.swift; sourceTree = "<group>"; };
+		100809E022690BD70047E949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/JobSearch.storyboard; sourceTree = "<group>"; };
 		100809E222690BD80047E949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		100809E522690BD80047E949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		100809E722690BD80047E949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +64,25 @@
 		100809F722690BD90047E949 /* JobFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		100809FB22690BD90047E949 /* JobFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobFinderUITests.swift; sourceTree = "<group>"; };
 		100809FD22690BD90047E949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10080A12226916100047E949 /* JobSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchPresenter.swift; sourceTree = "<group>"; };
+		10080A152269164E0047E949 /* ViewControllersAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllersAssembly.swift; sourceTree = "<group>"; };
+		10080A17226916C60047E949 /* StoryboardInitiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInitiable.swift; sourceTree = "<group>"; };
+		10080A192269179E0047E949 /* ViewControllersAssembly+JobSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewControllersAssembly+JobSearch.swift"; sourceTree = "<group>"; };
+		10080A1C22691A3D0047E949 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		10080A202269DD7F0047E949 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		10080A262269E0820047E949 /* GithubProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubProvider.swift; sourceTree = "<group>"; };
+		10080A282269E0B80047E949 /* SearchGOVProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchGOVProvider.swift; sourceTree = "<group>"; };
+		10080A2A2269E25C0047E949 /* ProvidersUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidersUseCase.swift; sourceTree = "<group>"; };
+		10080A2C226A57D20047E949 /* JobTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableViewCell.swift; sourceTree = "<group>"; };
+		10080A2D226A57D20047E949 /* JobTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JobTableViewCell.xib; sourceTree = "<group>"; };
+		10080A30226A69060047E949 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		10080A35226AFF5C0047E949 /* KeyboardAccessoryInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAccessoryInputView.swift; sourceTree = "<group>"; };
+		10080A36226AFF5C0047E949 /* KeyboardAccessoryInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardAccessoryInputView.xib; sourceTree = "<group>"; };
+		1081E792226B369E00E20018 /* Locations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Locations.plist; sourceTree = "<group>"; };
+		1081E794226B370400E20018 /* Positions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Positions.plist; sourceTree = "<group>"; };
+		4F2F989F7741EB77B09C835C /* Pods-JobFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobFinder.debug.xcconfig"; path = "Target Support Files/Pods-JobFinder/Pods-JobFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		B5345D331A1A240784152D5C /* Pods_JobFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JobFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F303C01BA6BCFB3A1CE7F934 /* Pods-JobFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JobFinder.release.xcconfig"; path = "Target Support Files/Pods-JobFinder/Pods-JobFinder.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A0840590C54D3692F42C416 /* Pods_JobFinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +118,8 @@
 				100809EF22690BD90047E949 /* JobFinderTests */,
 				100809FA22690BD90047E949 /* JobFinderUITests */,
 				100809D922690BD70047E949 /* Products */,
+				593D6C9629A06DF8CD9F1557 /* Pods */,
+				C7688445719CE96CE4492335 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +136,14 @@
 		100809DA22690BD70047E949 /* JobFinder */ = {
 			isa = PBXGroup;
 			children = (
-				100809DB22690BD70047E949 /* AppDelegate.swift */,
-				100809DD22690BD70047E949 /* ViewController.swift */,
-				100809DF22690BD70047E949 /* Main.storyboard */,
-				100809E222690BD80047E949 /* Assets.xcassets */,
-				100809E422690BD80047E949 /* LaunchScreen.storyboard */,
-				100809E722690BD80047E949 /* Info.plist */,
+				10080A09226913760047E949 /* Application */,
+				10080A142269163B0047E949 /* Assemblies */,
+				10080A0A226914140047E949 /* Flows */,
+				10080A1F2269DCA20047E949 /* Entities */,
+				10080A1E2269DC950047E949 /* UseCases */,
+				10080A0B226914260047E949 /* Common */,
+				10080A0C2269142E0047E949 /* Resources */,
+				10080A0D226914350047E949 /* Supporting Files */,
 			);
 			path = JobFinder;
 			sourceTree = "<group>";
@@ -125,6 +166,149 @@
 			path = JobFinderUITests;
 			sourceTree = "<group>";
 		};
+		10080A09226913760047E949 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				100809DB22690BD70047E949 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		10080A0A226914140047E949 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				10080A0E226914C40047E949 /* Search */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		10080A0B226914260047E949 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				10080A34226AFF5C0047E949 /* Keyboard Accessory Input View */,
+				10080A17226916C60047E949 /* StoryboardInitiable.swift */,
+				10080A1C22691A3D0047E949 /* Extensions.swift */,
+				10080A30226A69060047E949 /* Protocols.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		10080A0C2269142E0047E949 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1081E792226B369E00E20018 /* Locations.plist */,
+				1081E794226B370400E20018 /* Positions.plist */,
+				100809E222690BD80047E949 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		10080A0D226914350047E949 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				100809E422690BD80047E949 /* LaunchScreen.storyboard */,
+				100809E722690BD80047E949 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10080A0E226914C40047E949 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				100809DF22690BD70047E949 /* JobSearch.storyboard */,
+				10080A11226915C90047E949 /* JobSearch */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		10080A0F2269154B0047E949 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				10080A202269DD7F0047E949 /* Job.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		10080A10226915560047E949 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				10080A2C226A57D20047E949 /* JobTableViewCell.swift */,
+				10080A2D226A57D20047E949 /* JobTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		10080A11226915C90047E949 /* JobSearch */ = {
+			isa = PBXGroup;
+			children = (
+				10080A0F2269154B0047E949 /* Models */,
+				10080A10226915560047E949 /* Views */,
+				100809DD22690BD70047E949 /* JobSearchViewController.swift */,
+				10080A12226916100047E949 /* JobSearchPresenter.swift */,
+			);
+			path = JobSearch;
+			sourceTree = "<group>";
+		};
+		10080A142269163B0047E949 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				10080A152269164E0047E949 /* ViewControllersAssembly.swift */,
+				10080A192269179E0047E949 /* ViewControllersAssembly+JobSearch.swift */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		10080A1E2269DC950047E949 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				10080A2A2269E25C0047E949 /* ProvidersUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		10080A1F2269DCA20047E949 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				10080A252269E0250047E949 /* Providers */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		10080A252269E0250047E949 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				10080A262269E0820047E949 /* GithubProvider.swift */,
+				10080A282269E0B80047E949 /* SearchGOVProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		10080A34226AFF5C0047E949 /* Keyboard Accessory Input View */ = {
+			isa = PBXGroup;
+			children = (
+				10080A35226AFF5C0047E949 /* KeyboardAccessoryInputView.swift */,
+				10080A36226AFF5C0047E949 /* KeyboardAccessoryInputView.xib */,
+			);
+			path = "Keyboard Accessory Input View";
+			sourceTree = "<group>";
+		};
+		593D6C9629A06DF8CD9F1557 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F2F989F7741EB77B09C835C /* Pods-JobFinder.debug.xcconfig */,
+				F303C01BA6BCFB3A1CE7F934 /* Pods-JobFinder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C7688445719CE96CE4492335 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5345D331A1A240784152D5C /* Pods_JobFinder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +316,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10080A0022690BD90047E949 /* Build configuration list for PBXNativeTarget "JobFinder" */;
 			buildPhases = (
+				202815B890F7E4CD46DB78C7 /* [CP] Check Pods Manifest.lock */,
 				100809D422690BD70047E949 /* Sources */,
 				100809D522690BD70047E949 /* Frameworks */,
 				100809D622690BD70047E949 /* Resources */,
+				6DB1469029B5EDA50149EE01 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,9 +415,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10080A38226AFF5C0047E949 /* KeyboardAccessoryInputView.xib in Resources */,
+				1081E795226B370400E20018 /* Positions.plist in Resources */,
 				100809E622690BD80047E949 /* LaunchScreen.storyboard in Resources */,
 				100809E322690BD80047E949 /* Assets.xcassets in Resources */,
-				100809E122690BD70047E949 /* Main.storyboard in Resources */,
+				1081E793226B369E00E20018 /* Locations.plist in Resources */,
+				100809E122690BD70047E949 /* JobSearch.storyboard in Resources */,
+				10080A2F226A57D20047E949 /* JobTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +441,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		202815B890F7E4CD46DB78C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JobFinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DB1469029B5EDA50149EE01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JobFinder/Pods-JobFinder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JobFinder/Pods-JobFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		100809D422690BD70047E949 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				100809DE22690BD70047E949 /* ViewController.swift in Sources */,
+				10080A272269E0820047E949 /* GithubProvider.swift in Sources */,
+				10080A1A2269179E0047E949 /* ViewControllersAssembly+JobSearch.swift in Sources */,
+				100809DE22690BD70047E949 /* JobSearchViewController.swift in Sources */,
+				10080A2E226A57D20047E949 /* JobTableViewCell.swift in Sources */,
+				10080A13226916100047E949 /* JobSearchPresenter.swift in Sources */,
+				10080A162269164E0047E949 /* ViewControllersAssembly.swift in Sources */,
+				10080A292269E0B80047E949 /* SearchGOVProvider.swift in Sources */,
+				10080A2B2269E25C0047E949 /* ProvidersUseCase.swift in Sources */,
 				100809DC22690BD70047E949 /* AppDelegate.swift in Sources */,
+				10080A31226A69060047E949 /* Protocols.swift in Sources */,
+				10080A18226916C60047E949 /* StoryboardInitiable.swift in Sources */,
+				10080A1D22691A3D0047E949 /* Extensions.swift in Sources */,
+				10080A37226AFF5C0047E949 /* KeyboardAccessoryInputView.swift in Sources */,
+				10080A212269DD7F0047E949 /* Job.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,12 +546,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		100809DF22690BD70047E949 /* Main.storyboard */ = {
+		100809DF22690BD70047E949 /* JobSearch.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				100809E022690BD70047E949 /* Base */,
 			);
-			name = Main.storyboard;
+			name = JobSearch.storyboard;
 			sourceTree = "<group>";
 		};
 		100809E422690BD80047E949 /* LaunchScreen.storyboard */ = {
@@ -430,11 +683,12 @@
 		};
 		10080A0122690BD90047E949 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F2F989F7741EB77B09C835C /* Pods-JobFinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LADD8YSE5N;
-				INFOPLIST_FILE = JobFinder/Info.plist;
+				INFOPLIST_FILE = "JobFinder/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,11 +702,12 @@
 		};
 		10080A0222690BD90047E949 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F303C01BA6BCFB3A1CE7F934 /* Pods-JobFinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LADD8YSE5N;
-				INFOPLIST_FILE = JobFinder/Info.plist;
+				INFOPLIST_FILE = "JobFinder/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

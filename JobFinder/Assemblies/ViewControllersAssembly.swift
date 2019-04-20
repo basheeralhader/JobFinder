@@ -1,10 +1,11 @@
 //
 //  ViewControllersAssembly.swift
-//  iTunesApps-MVVM
+//  JobFinder
 //
-//  Created by Basheer Alhader on 2/9/19.
+//  Created by OSX on 4/18/19.
 //  Copyright © 2019 iBasheer. All rights reserved.
 //
+
 
 import UIKit
 
@@ -12,7 +13,9 @@ final class ViewControllersAssembly {
     
     // MARK: - Static properties
     
-    static private(set) var topApps: UIStoryboard = { UIStoryboard(name: "TopApps") }()
+    static private(set) var jobSearch: UIStoryboard = { UIStoryboard(name: "JobSearch") }()
+    // Add a new storyboard here
+    
 }
 
 extension UIStoryboard {
