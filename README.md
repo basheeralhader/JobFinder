@@ -13,31 +13,48 @@
 	* Usually we have one `Presenter` per scene (view controller)
 	* It doesn't reference the concrete type of the `View`, but rather it references the `View` protocol that is implemented usually by a `UIViewController` subclass
 	* It should be a plain `Swift` class and not reference any `iOS` framework classes - this makes it easier to reuse
-	* Provides to `View` only ?`Displayable`? models
-* `Router` - contains navigation / flow logic from one scene (view controller) to another
-	* It's an extension for the scene (view controller)
-	* Navigation is carried out through the `UIStoryboardSegue`
-	* Each router must contain a segue identifier
-	* Responsible for data injection due to the `func prepare(for segue: UIStoryboardSegue, sender: Any?)` method
-
-#### Clean Architecture Concepts
-
-![alt text](Documentation/CleanArchitecture.jpg "Scheme")
-
-##### Core Logic
+* `Assembly` - to Injecting a view controller from a storyboard
+	* Used to instantiate View controllers using a generic func
+	* Used to inject the params for example Presenter
+	* Usually we have to create extension for each module 
 
 * `UseCase` - contains the application / business logic for a specific use case in your application
-	* It is referenced by the `Presenter`. The `Presenter` can reference multiple `UseCases` since it's common to have multiple use cases on the same screen
-	* It manipulates `Entities` and communicates through `Operations` to retrieve / persist the entities
+        * It is referenced by the `Presenter`. The `Presenter` can reference multiple `UseCases` since it's common to have multiple use cases on the same screen
+        * It manipulates `Entities` and communicates through `Operations` to retrieve / persist the entities
 
 * `Entity` - plain `Swift` classes / structs
-	* Models objects used by your application
+        * Enterprise wide business architecture
 
-##### Architecture Workflow:
-![alt text](Documentation/Architecture Workflow.png "Scheme")
 
-[draw.io](https://drive.google.com/file/d/1gA7Ati_GojIaA910g-YRKOkbVo0PizcZ/view?usp=sharing)
 
+###  Project Structure
+##### This Structure was build to handle a significant expansion in the future
+##### Enterprise wide and specific business were handled
+
+![alt text](ProjectStructure.png "Scheme")
+
+
+
+###  Project Mock
+
+![alt text](JopProviderMock.png "Scheme")
+
+
+###  Adding a New Provider
+
+*  Go to 'Providers' folder inside 'Entities' folder and add a new object provider based on  JSON  provider Structure
+* Then go to ProvidersUseCase class 
+         * Add a new case in 'JobsProviders' Enum
+         * Put the providerLink as is like a provider Documentation
+         * Create map provider func and connect it from main map func
+         * Run :)
+
+* No need to do anything inside your Flow :)
+
+### Autocomplete in Filter By position and Location
+
+* There's two plist files (position.plist, location.plist) and the fetching will be based on them
+* There's no enough data there, we can fill them by any API in the future
 
 #### Useful Resources
 * [The Clean Architecture, by Uncle Bob](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html)
